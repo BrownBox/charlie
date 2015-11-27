@@ -1,1 +1,1 @@
-<div class="columns">footer</div>
+<div class="columns" data-swiftype-index='false'>footer</div>
