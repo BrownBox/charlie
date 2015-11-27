@@ -10,11 +10,14 @@ $theme_files = array(
 	array( 'file' => 'fonts.php',           'dir' => 'theme' ), // <-- lets us link up to three google fonts
 	array( 'file' => 'functions.php',       'dir' => 'theme' ), // <-- our theme functions
 	array( 'file' => 'customizer.php',      'dir' => 'theme' ), // <-- our customizer fields & settings
+
+	array( 'file' => 'convert_colour.php',  'dir' => 'fx' ),
+	array( 'file' => 'extract.php',         'dir' => 'fx' ),
 	array( 'file' => 'slug.php',            'dir' => 'fx' ),
 
     // Custom Gravity Forms pieces
 	array( 'file' => 'australian_states.php', 'dir' => 'gf' ), // <-- adds Australia address type
-	);
+);
 
 foreach ($theme_files as $theme_file ) bb_init::include_file( $theme_file );
 
@@ -28,5 +31,3 @@ class bb_init {
 		return;
 	}
 }
-
-?>

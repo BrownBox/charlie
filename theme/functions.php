@@ -12,6 +12,7 @@ add_filter( 'wp_title', array( 'bb_theme', 'title' ), 10, 2 );
 // add actions
 add_action( 'admin_bar_menu',  array( 'bb_theme', 'custom_adminbar' ), 999 );
 add_action( 'wp_head', array( 'bb_theme', 'style'), 10, 2 );
+add_filter( 'template_include', array( 'bb_theme', 'template_name'), 10);
 
 // the master class
 // -----------------------------------
@@ -207,6 +208,17 @@ class bb_theme {
 		);
 		$wp_admin_bar->add_node( $args );
 	}
-}
 
-?>
+    static function template_name($t) {
+//         if( !isset( $GLOBALS['current_theme_template'] ) ) return false;
+
+        if ( current_user_can('manage_options') ) {
+            $template_name = get_page_template_slug(get_queried_object_id());
+            if (empty($template_name)) $template_name = '(default)';
+            echo '<div id="template-name">'.basename($t).' > '.$template_name.'</div>'."\n";
+        }
+        return $t;
+
+//         return $GLOBALS['current_theme_template'];
+    }
+}

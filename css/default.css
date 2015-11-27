@@ -7,7 +7,6 @@ body, * {font-family: 'Raleway', sans-serif;} body {position: static !important;
 #wtaiu-data .panel .panel-header {border: 0 none; text-shadow: 0 0 0 rgba(0, 0, 0, 0);}
 #wtaiu-data .panel {background: none repeat scroll 0 0 #f2f2f2; border-style: none; border-width: 0; color: #222222!important;}
 #wtaiu .info-list dd, #wtaiu .info-list dt, #wtaiu-data .panel p , #wtaiu-data .info-table th, #wtaiu-data .info-table td, #php-info-panel table td, #php-info-panel table th {font-family: arial; font-size: 0.75rem; font-weight: 400 !important;}
-#paupanels-frame {display: none;}
 #row-top img {margin: 0.75rem 0;}
 #row-inner-top > ul {float: right; list-style: outside none none; margin: -1px 0 0;}
 #row-top ul > li {background: none repeat scroll 0 0 #eee; border-bottom: 2px solid #bbb; display: inline; margin-right: 1px; padding: 0.125rem 0.5rem;}
@@ -18,6 +17,11 @@ body, * {font-family: 'Raleway', sans-serif;} body {position: static !important;
 #row-inner-top > a {display: inline-block;}
 .tab-bar a > #logo {margin-bottom: 0.125rem; margin-left: 3.5rem;}
 .tab-bar .cta {border-bottom: 0 none; margin-right: 0.325rem;}
+
+.uppercase {text-transform: uppercase;}
+.lowercase {text-transform: lowercase;}
+
+#template-name {background-color: rgba(255, 255, 255, 0.25); bottom: 0; display: inline-block; opacity: 0.5; padding: 1rem; position: fixed; right: 0;}
 
 /* Default WP image styles */
 img.alignright { float: right; margin: 0 0 1em 1em; }
