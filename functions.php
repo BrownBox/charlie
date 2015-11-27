@@ -10,6 +10,7 @@ $theme_files = array(
 	array( 'file' => 'fonts.php',           'dir' => 'theme' ), // <-- lets us link up to three google fonts
 	array( 'file' => 'functions.php',       'dir' => 'theme' ), // <-- our theme functions
 	array( 'file' => 'customizer.php',      'dir' => 'theme' ), // <-- our customizer fields & settings
+	array( 'file' => 'slug.php',            'dir' => 'fx' ),
 
     // Custom Gravity Forms pieces
 	array( 'file' => 'australian_states.php', 'dir' => 'gf' ), // <-- adds Australia address type
