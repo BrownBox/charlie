@@ -27,7 +27,7 @@ wp_head(); ?>
     <div class="s-everything">
         <div class="off-canvas-wrap" data-offcanvas>
              <div class="inner-wrap">
-                <header data-swiftype-index='false'>
+                <header data-swiftype-index='false' class="hide-for-print">
 <?php bb_theme::section( 'name=top&file=top.php&&class=hide-for-small&inner_class=row' ); ?>
 <?php locate_template( array( 'sections/offcanvas.php' ), true );?>
                 </header>

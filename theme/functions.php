@@ -50,10 +50,9 @@ class bb_theme {
   }
 
 	static function style(){
-
-		if( !empty( $_GET['css'] ) && $_GET['css'] == 'new' ) {
+// 		if( !empty( $_GET['css'] ) && $_GET['css'] == 'new' ) {
 			delete_transient('bb_style');
-		}
+// 		}
 
 		// Check for transient. If none, then execute WP_Query
 		if ( false === ( $bb_style = get_transient( 'bb_style' ) ) ) {

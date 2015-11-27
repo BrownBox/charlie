@@ -1,1 +1,1 @@
-<div class="columns" data-swiftype-index='false'>footer</div>
+<div class="columns hide-for-print" data-swiftype-index='false'>footer</div>
