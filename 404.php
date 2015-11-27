@@ -1,3 +1,3 @@
 <?php get_header(); ?>
-Sorry, no page here!
+<?php bb_theme::section('name=content&file=404.php&inner_class=row'); ?>
 <?php get_footer(); ?>
